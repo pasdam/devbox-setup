@@ -1,0 +1,7 @@
+alias cls='printf "\033c"'
+alias env='env | sort'
+alias ll="ls -lsah"
+alias perms='stat -c "%a %n"'
+
+# fast find
+alias ff='find . -name $1'
