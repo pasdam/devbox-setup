@@ -28,7 +28,7 @@ cask 'firefox'
 cask 'flycut'
 cask 'genymotion'
 cask 'google-chrome'
-cask 'intellij-idea'
+cask 'intellij-idea-ce'
 cask 'iterm2'
 cask 'minikube'
 cask 'postman'
@@ -47,4 +47,6 @@ tap 'spectralkh/tap'
 cask 'flutter'
 
 mas 'amphetamine', id: 937984704
+mas 'excel', id: 462058435
+mas 'word', id: 462054704
 mas 'xcode', id: 497799835
