@@ -1,0 +1,13 @@
+{
+    "dart.env": {
+        "ENABLE_FLUTTER_DESKTOP": true,
+    },
+    "editor.minimap.enabled": false,
+    "editor.suggestSelection": "first",
+    "go.useLanguageServer": true,
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.startupEditor": "newUntitledFile",
+    "plantuml.render": "PlantUMLServer",
+    "files.insertFinalNewline": true,
+}

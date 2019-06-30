@@ -1,0 +1,11 @@
+{
+	"Ignore all file": {
+		"scope": "ignore",
+		"prefix": "gitkeep",
+		"body": [
+			"*",
+			"!.gitignore",
+		],
+		"description": "Ignore all file but gitignore"
+	}
+}
