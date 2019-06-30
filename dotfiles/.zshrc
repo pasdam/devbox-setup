@@ -22,8 +22,6 @@ fi
 source $SETUP_PROJECT_PATH/dotfiles/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
-echo "zh:"$PROJECT_PATHS
-
 # Load aliases files from ./aliases
 for file in $SETUP_PROJECT_PATH/dotfiles/aliases/*; do
   source $file
