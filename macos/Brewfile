@@ -19,6 +19,7 @@ brew 'prototool'
 brew 'sbt'
 brew 'scala'
 brew 'telnet'
+brew 'tree'
 brew 'zsh-autosuggestions'
 brew 'zsh'
 
@@ -45,6 +46,9 @@ cask 'zoomus'
 
 tap 'spectralkh/tap'
 cask 'flutter'
+
+tap 'jesseduffield/lazydocker'
+brew 'lazydocker'
 
 mas 'amphetamine', id: 937984704
 mas 'excel', id: 462058435
