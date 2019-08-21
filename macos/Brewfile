@@ -2,6 +2,9 @@ tap 'AdoptOpenJDK/openjdk'
 cask 'adoptopenjdk8'
 cask 'adoptopenjdk11'
 
+tap 'c-bata/kube-prompt'
+brew 'kube-prompt'
+
 brew 'awscli'
 brew 'curl'
 brew 'docker-compose'
@@ -27,6 +30,7 @@ cask 'docker'
 cask 'firefox'
 cask 'flycut'
 cask 'genymotion'
+cask 'gimp'
 cask 'google-chrome'
 cask 'intellij-idea-ce'
 cask 'iterm2'
@@ -51,6 +55,4 @@ tap 'jesseduffield/lazydocker'
 brew 'lazydocker'
 
 mas 'amphetamine', id: 937984704
-mas 'excel', id: 462058435
-mas 'word', id: 462054704
 mas 'xcode', id: 497799835
