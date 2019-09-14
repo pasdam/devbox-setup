@@ -6,10 +6,14 @@
     "editor.renderWhitespace": "all",
     "editor.suggestSelection": "first",
     "explorer.autoReveal": false,
+    "files.exclude": {
+        "**/.git": false
+    },
     "files.insertFinalNewline": true,
     "go.useLanguageServer": true,
     "java.configuration.checkProjectSettingsExclusions": false,
+    "plantuml.render": "PlantUMLServer",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.startupEditor": "newUntitledFile",
-    "plantuml.render": "PlantUMLServer",
+    "dart.warnWhenEditingFilesOutsideWorkspace": false,
 }
