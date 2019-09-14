@@ -1,5 +1,7 @@
 #!/bin/sh
 
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
 installApps() {
     xcode-select --install
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -16,3 +18,8 @@ showHiddenFiles() {
 
 installApps
 showHiddenFiles
+
+if [ -f "$SCRIPT_DIR/private.sh" ]; then
+    echo "Running private script"
+    sh "$SCRIPT_DIR/private.sh"
+fi
