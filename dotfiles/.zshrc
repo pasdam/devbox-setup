@@ -26,3 +26,6 @@ source $ZSH/oh-my-zsh.sh
 for file in $SETUP_PROJECT_PATH/dotfiles/aliases/*; do
   source $file
 done
+if [ -f "$SETUP_PROJECT_PATH/dotfiles/aliases/.local" ]; then
+    source $SETUP_PROJECT_PATH/dotfiles/aliases/.local
+fi
