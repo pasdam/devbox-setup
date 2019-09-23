@@ -1,7 +1,7 @@
 alias cls='printf "\033c"'
 alias env='env | sort'
 alias ll="ls -lsah"
-alias perms='stat -c "%a %n"'
+alias perms='perl -e '"'"'printf "%04o %s\n", (stat)[2] & 07777, $_ for @ARGV'"'"''
 
 # fast find
 alias ff='find . -name $1'
