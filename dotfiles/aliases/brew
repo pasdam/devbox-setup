@@ -1,1 +1,1 @@
-alias bwup='brew update && brew upgrade && brew cask upgrade && brew cleanup'
+alias bwup='brew update && brew upgrade && brew cask upgrade --greedy && brew cleanup'
