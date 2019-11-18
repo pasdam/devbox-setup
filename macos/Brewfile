@@ -5,6 +5,9 @@ cask 'adoptopenjdk11'
 tap 'c-bata/kube-prompt'
 brew 'kube-prompt'
 
+cask 'osxfuse'
+brew 'datawire/blackbird/telepresence'
+
 brew 'awscli'
 brew 'curl'
 brew 'docker-compose'
@@ -19,13 +22,12 @@ brew 'kops'
 brew 'ktr0731/evans/evans'
 brew 'node'
 brew 'prototool'
-brew 'sbt'
-brew 'scala'
 brew 'telnet'
 brew 'tree'
 brew 'zsh-autosuggestions'
 brew 'zsh'
 
+cask 'dbeaver-community'
 cask 'docker'
 cask 'firefox'
 cask 'flycut'
@@ -50,9 +52,6 @@ cask 'zoomus'
 
 tap 'spectralkh/tap'
 cask 'flutter'
-
-tap 'jesseduffield/lazydocker'
-brew 'lazydocker'
 
 mas 'amphetamine', id: 937984704
 mas 'xcode', id: 497799835
