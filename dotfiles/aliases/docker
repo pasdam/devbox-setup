@@ -1,0 +1,6 @@
+alias docker_jupyter='docker run --rm -d -p 11000:8888 -v "$HOME/workspace/jupyter":/home/jovyan/work --name jupyter jupyter/datascience-notebook:1386e2046833 && docker logs -f jupyter'
+alias docker_remove_dangling_images='docker rmi $(docker images -q -f dangling=true)'
+alias dcu='docker-compose up -d --build'
+alias dcd='docker-compose down'
+alias di='docker images'
+alias dps='docker ps -a'
