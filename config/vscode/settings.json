@@ -16,4 +16,10 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "workbench.startupEditor": "newUntitledFile",
     "dart.warnWhenEditingFilesOutsideWorkspace": false,
+    "vs-kubernetes": {
+        "vs-kubernetes.helm-path": "/Users/paco/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+        "vs-kubernetes.kubectl-path": "/Users/paco/.vs-kubernetes/tools/kubectl/kubectl",
+        "vs-kubernetes.minikube-path": "/Users/paco/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+        "vs-kubernetes.draft-path": "/Users/paco/.vs-kubernetes/tools/draft/darwin-amd64/draft"
+    },
 }
