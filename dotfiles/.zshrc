@@ -3,6 +3,7 @@
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=2000
+ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history completion)
 
 # Theme
 # ==============
