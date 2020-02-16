@@ -2,36 +2,36 @@
 	"If directory exists": {
 		"prefix": "ifdir",
 		"body": [
-			"if [ -d \"${1:directory}\" ]; then\n\t$0\nfi",
+			"if [ -d \"${1:directory}\" ]; then\n\t$0\nfi"
 		],
 		"description": "Check whether a specified directory exists"
 	},
 	"If directory doesn't exists": {
 		"prefix": "ifnotdir",
 		"body": [
-			"if [ ! -d \"${1:directory}\" ]; then\n\t$0\nfi",
+			"if [ ! -d \"${1:directory}\" ]; then\n\t$0\nfi"
 		],
 		"description": "Check if a specified directory does not exist"
 	},
 	"If file exists": {
 		"prefix": "iffile",
 		"body": [
-			"if [ -f \"${1:file}\" ]; then\n\t$0\nfi",
+			"if [ -f \"${1:file}\" ]; then\n\t$0\nfi"
 		],
 		"description": "Check whether a specified file exists"
 	},
 	"If file doesn't exists": {
 		"prefix": "ifnotfile",
 		"body": [
-			"if [ ! -f \"${1:file}\" ]; then\n\t$0\nfi",
+			"if [ ! -f \"${1:file}\" ]; then\n\t$0\nfi"
 		],
 		"description": "Check if a specified file does not exist"
 	},
-	"Script directory": {
-		"prefix": "scriptdir",
+	"Script's folder": {
+		"prefix": "scriptFolder",
 		"body": [
-			"${1:SCRIPT_DIR}=\"$( cd \"$( dirname \"${BASH_SOURCE[0]}\" )\" >/dev/null 2>&1 && pwd )\"$0",
+			"WORKING_DIR=\"$(cd \"$( dirname \"${BASH_SOURCE[0]}\" )\" >/dev/null && pwd )\""
 		],
-		"description": "Create a variable whose value is the absolute path of the script's parent folder"
+		"description": "Get current script's folder"
 	},
 }

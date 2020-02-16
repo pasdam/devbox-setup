@@ -1,7 +1,14 @@
 {
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
     "dart.env": {
         "ENABLE_FLUTTER_DESKTOP": true,
     },
+    "dart.warnWhenEditingFilesOutsideWorkspace": false,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "all",
     "editor.suggestSelection": "first",
@@ -10,16 +17,16 @@
         "**/.git": false
     },
     "files.insertFinalNewline": true,
+    "go.formatTool": "goimports",
     "go.useLanguageServer": true,
     "java.configuration.checkProjectSettingsExclusions": false,
     "plantuml.render": "PlantUMLServer",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "workbench.startupEditor": "newUntitledFile",
-    "dart.warnWhenEditingFilesOutsideWorkspace": false,
     "vs-kubernetes": {
         "vs-kubernetes.helm-path": "/Users/paco/.vs-kubernetes/tools/helm/darwin-amd64/helm",
         "vs-kubernetes.kubectl-path": "/Users/paco/.vs-kubernetes/tools/kubectl/kubectl",
         "vs-kubernetes.minikube-path": "/Users/paco/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
         "vs-kubernetes.draft-path": "/Users/paco/.vs-kubernetes/tools/draft/darwin-amd64/draft"
     },
+    "workbench.startupEditor": "newUntitledFile",
 }
