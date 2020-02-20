@@ -17,6 +17,8 @@
         "**/.git": false
     },
     "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
     "java.configuration.checkProjectSettingsExclusions": false,
