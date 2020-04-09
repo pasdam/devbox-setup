@@ -11,6 +11,7 @@
     "dart.warnWhenEditingFilesOutsideWorkspace": false,
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "all",
+    "editor.rulers": [80,120],
     "editor.suggestSelection": "first",
     "explorer.autoReveal": false,
     "files.exclude": {
@@ -37,4 +38,7 @@
     "go.coverOnSingleTest": true,
     "go.coverOnSingleTestFile": true,
     "go.testTimeout": "10s",
+    "go.buildFlags": [
+        "-gcflags=-l"
+    ],
 }
