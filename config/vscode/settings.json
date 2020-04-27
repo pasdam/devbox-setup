@@ -41,4 +41,7 @@
     "go.buildFlags": [
         "-gcflags=-l"
     ],
+    "go.formatFlags": [
+        "-s"
+    ],
 }
