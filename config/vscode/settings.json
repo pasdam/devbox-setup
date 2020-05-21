@@ -22,16 +22,7 @@
     "files.trimTrailingWhitespace": true,
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
-    "java.configuration.checkProjectSettingsExclusions": false,
     "plantuml.render": "PlantUMLServer",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "vs-kubernetes": {
-        "vs-kubernetes.helm-path": "/Users/paco/.vs-kubernetes/tools/helm/darwin-amd64/helm",
-        "vs-kubernetes.kubectl-path": "/Users/paco/.vs-kubernetes/tools/kubectl/kubectl",
-        "vs-kubernetes.minikube-path": "/Users/paco/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
-        "vs-kubernetes.draft-path": "/Users/paco/.vs-kubernetes/tools/draft/darwin-amd64/draft",
-        "vs-kubernetes.minikube-path.mac": "/Users/paco/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-    },
     "workbench.startupEditor": "newUntitledFile",
     "todo-tree.tree.showScanModeButton": false,
     "go.useCodeSnippetsOnFunctionSuggest": true,
@@ -44,4 +35,7 @@
     "go.formatFlags": [
         "-s"
     ],
+    "files.associations": {
+        "*.env": "properties"
+    },
 }
