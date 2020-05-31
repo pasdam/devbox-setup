@@ -19,7 +19,7 @@ showHiddenFiles() {
 installApps
 showHiddenFiles
 
-if [ -f "$SCRIPT_DIR/private.sh" ]; then
+if [ -f "$SCRIPT_DIR/.local.sh" ]; then
     echo "Running private script"
-    sh "$SCRIPT_DIR/private.sh"
+    sh "$SCRIPT_DIR/.local.sh"
 fi
