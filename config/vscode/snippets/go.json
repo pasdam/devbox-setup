@@ -14,5 +14,14 @@
 			"}",
 		],
 		"description": "Assert got error has the same message as the expected one"
+	},
+	"Handle error": {
+		"prefix": "ie",
+		"body": [
+			"if err != nil {",
+			"\treturn ${1:err}",
+			"}",
+		],
+		"description": "Assert got error has the same message as the expected one"
 	}
 }

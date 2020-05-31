@@ -20,9 +20,9 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "go.formatTool": "goimports",
+    "go.formatTool": "gofmt",
     "go.useLanguageServer": true,
-    "plantuml.render": "PlantUMLServer",
+    "plantuml.render": "Local",
     "workbench.startupEditor": "newUntitledFile",
     "todo-tree.tree.showScanModeButton": false,
     "go.useCodeSnippetsOnFunctionSuggest": true,
@@ -38,4 +38,12 @@
     "files.associations": {
         "*.env": "properties"
     },
+    "cSpell.userWords": [
+        "Kubenetes",
+        "kubernetes"
+    ],
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "dart.flutterSdkPath": "/Users/paco/workspace/github/flutter/flutter",
 }

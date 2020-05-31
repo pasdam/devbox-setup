@@ -34,4 +34,13 @@
 		],
 		"description": "Get current script's folder"
 	},
+	"If string contains substring": {
+		"prefix": "ifSubstring",
+		"body": [
+			"if [ -z \"${${1:string}##*${2:substring}*}\" ]; then",
+			"\t# substring is found",
+			"fi"
+		],
+		"description": "Check weather a string contains a substring"
+	},
 }
