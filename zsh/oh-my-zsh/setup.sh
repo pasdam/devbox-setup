@@ -8,5 +8,7 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 fi
 
+git clone --depth 1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 # install dotfiles
 ln -sf $SCRIPT_DIR/themes/robbyrussell_mod.zsh-theme $HOME/.oh-my-zsh/themes/robbyrussell_mod.zsh-theme

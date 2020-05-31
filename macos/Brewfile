@@ -32,7 +32,6 @@ brew 'node'
 brew 'prototool'
 brew 'telnet'
 brew 'tree'
-brew 'zsh-autosuggestions'
 brew 'zsh'
 
 # cask 'chromium'

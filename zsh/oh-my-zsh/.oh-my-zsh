@@ -9,4 +9,5 @@ plugins=(
   pj
   sudo
   systemd
+  zsh-autosuggestions
 )
