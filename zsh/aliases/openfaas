@@ -1,0 +1,5 @@
+faas_k8s_init () {
+    export OPENFAAS_URL=http://127.0.0.1:31112
+    kubectl port-forward svc/gateway -n openfaas 31112:8080 > /dev/null &
+    echo -n $PASSWORD | faas-cli login --password-stdin
+}

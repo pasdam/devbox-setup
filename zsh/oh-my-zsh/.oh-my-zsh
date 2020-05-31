@@ -1,5 +1,3 @@
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-
 # pj assumes an array variable, PROJECT_PATHS, to be defined with the projects folders
 plugins=(
   brew

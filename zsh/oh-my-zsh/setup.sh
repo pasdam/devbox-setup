@@ -9,4 +9,4 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
 fi
 
 # install dotfiles
-ln -sf $SCRIPT_DIR/.zshrc $HOME/.zshrc
+ln -sf $SCRIPT_DIR/themes/robbyrussell_mod.zsh-theme $HOME/.oh-my-zsh/themes/robbyrussell_mod.zsh-theme

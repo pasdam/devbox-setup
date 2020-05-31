@@ -1,6 +1,7 @@
 alias k="kubectl"
 alias kno="kubectl get nodes"
 alias kpo="kubectl get pods"
+alias kp="kube-prompt"
 
 kdash() {
     kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep admin-user | awk '{print $1}')
