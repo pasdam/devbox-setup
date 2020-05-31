@@ -27,13 +27,6 @@
 		],
 		"description": "Check if a specified file does not exist"
 	},
-	"Script's folder": {
-		"prefix": "scriptFolder",
-		"body": [
-			"WORKING_DIR=\"$(cd \"$( dirname \"${BASH_SOURCE[0]}\" )\" >/dev/null && pwd )\""
-		],
-		"description": "Get current script's folder"
-	},
 	"If string contains substring": {
 		"prefix": "ifSubstring",
 		"body": [
@@ -42,5 +35,19 @@
 			"fi"
 		],
 		"description": "Check weather a string contains a substring"
+	},
+	"Script's folder": {
+		"prefix": "scriptFolder",
+		"body": [
+			"WORKING_DIR=\"$(cd \"$( dirname \"${BASH_SOURCE[0]}\" )\" >/dev/null && pwd )\""
+		],
+		"description": "Get current script's folder"
+	},
+	"Shebang": {
+		"prefix": "shabang",
+		"body": [
+			"#!/usr/bin/env bash"
+		],
+		"description": "Shebang valid on all systems"
 	},
 }
