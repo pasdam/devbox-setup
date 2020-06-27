@@ -29,9 +29,6 @@
     "go.coverOnSingleTest": true,
     "go.coverOnSingleTestFile": true,
     "go.testTimeout": "10s",
-    "go.buildFlags": [
-        "-gcflags=-l"
-    ],
     "go.formatFlags": [
         "-s"
     ],
@@ -46,4 +43,19 @@
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
     "dart.flutterSdkPath": "/Users/paco/workspace/github/flutter/flutter",
+    "insertnump.suggestions": [
+        "%d,0,1",
+        "%d,1,1"
+    ],
+    "ruby.useLanguageServer": true,
+    "ruby.format": "rubocop",
+    "ruby.codeCompletion": "rcodetools",
+    "ruby.intellisense": "rubyLocate",
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "go.buildFlags": [
+        "-gcflags=-l"
+    ],
+    "diffEditor.ignoreTrimWhitespace": false,
 }

@@ -2,7 +2,7 @@
 	"Script folder": {
 		"prefix": "scriptFolder",
 		"body": [
-			"WORKING_DIR:=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))"
+			"WORKING_DIR := $(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))"
 		],
 		"description": "Get the Makefile's parent folder"
 	}

@@ -44,7 +44,7 @@
 		"description": "Get current script's folder"
 	},
 	"Shebang": {
-		"prefix": "shabang",
+		"prefix": "shebang",
 		"body": [
 			"#!/usr/bin/env bash"
 		],
