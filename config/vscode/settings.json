@@ -58,4 +58,9 @@
         "-gcflags=-l"
     ],
     "diffEditor.ignoreTrimWhitespace": false,
+    "clangd.path": "/Users/pasquale.damiani/Library/Application Support/VSCodium/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/10.0.0/clangd_10.0.0/bin/clangd",
+    "python.dataScience.jupyterServerURI": "http://127.0.0.1:11000",
+    "python.dataScience.askForKernelRestart": false,
+    "testMate.cpp.log.userId": "d1e22e6fd83d4b3bc4bc41d05e853c789d27df46",
+    "python.autoComplete.addBrackets": true,
 }
