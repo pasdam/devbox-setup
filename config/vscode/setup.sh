@@ -3,6 +3,8 @@
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 VSCODE_CONFIG_DIR="$HOME/Library/Application Support/VSCodium/User"
 
+mkdir -p $VSCODE_CONFIG_DIR
+
 if [ -f "$VSCODE_CONFIG_DIR/keybindings.json" ]; then
     echo "$VSCODE_CONFIG_DIR/keybindings.json already exists, the setup won't override it"
 
