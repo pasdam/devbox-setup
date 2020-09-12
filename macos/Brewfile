@@ -4,6 +4,9 @@ cask 'adoptopenjdk11'
 tap 'c-bata/kube-prompt'
 brew 'kube-prompt'
 
+tap 'solo-io/tap'
+brew 'glooctl'
+
 cask 'osxfuse'
 brew 'datawire/blackbird/telepresence'
 
