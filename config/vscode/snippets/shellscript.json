@@ -36,6 +36,24 @@
 		],
 		"description": "Check weather a string contains a substring"
 	},
+	"If string empty": {
+		"prefix": "ifStringEmpty",
+		"body": [
+			"if [ -z \"${1:string}\" ]; then",
+			"\t# string is empty",
+			"fi"
+		],
+		"description": "Check weather a string contains a substring"
+	},
+	"If string not empty": {
+		"prefix": "ifStringNotEmpty",
+		"body": [
+			"if [ -n \"${1:string}\" ]; then",
+			"\t# string is empty",
+			"fi"
+		],
+		"description": "Check weather a string contains a substring"
+	},
 	"Script's folder": {
 		"prefix": "scriptFolder",
 		"body": [
