@@ -54,6 +54,24 @@
 		],
 		"description": "Check weather a string contains a substring"
 	},
+	"If strings equal": {
+		"prefix": "ifStringsEqual",
+		"body": [
+			"if [ ${1:str1} == \"${2:str2}\" ]; then",
+			"\t# strings are equal",
+			"fi"
+		],
+		"description": "Check weather 2 strings are equal"
+	},
+	"If strings not equal": {
+		"prefix": "ifStringsNotEqual",
+		"body": [
+			"if [ ${1:str1} != \"${2:str2}\" ]; then",
+			"\t# strings are different",
+			"fi"
+		],
+		"description": "Check weather 2 strings are different"
+	},
 	"Script's folder": {
 		"prefix": "scriptFolder",
 		"body": [
