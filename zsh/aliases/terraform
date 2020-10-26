@@ -1,0 +1,4 @@
+alias t='terraform'
+alias ta='terraform apply'
+alias tf='terraform fmt -recursive'
+alias tp='terraform plan'

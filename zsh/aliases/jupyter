@@ -1,0 +1,2 @@
+alias jupyter_start='docker run --rm -d -p 8888:8888 -v `pwd`:/home/jovyan/work --name jupyter jupyter/datascience-notebook:b90cce83f37b && docker logs -f jupyter'
+alias jupyter_stop='docker stop jupyter'
