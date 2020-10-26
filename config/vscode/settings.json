@@ -77,4 +77,5 @@
         "editor.tabCompletion": "onlySnippets",
         "editor.wordBasedSuggestions": false
     },
+    "window.zoomLevel": -1,
 }
