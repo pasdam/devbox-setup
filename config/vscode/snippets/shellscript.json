@@ -1,4 +1,11 @@
 {
+	"Echo error": {
+		"prefix": "err",
+		"body": [
+			"1>&2 echo \"${1:message}\""
+		],
+		"description": "Prints an error message to stderr"
+	},
 	"If directory exists": {
 		"prefix": "ifdir",
 		"body": [
