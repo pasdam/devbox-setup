@@ -4,8 +4,27 @@ alias kpo="kubectl get pods"
 alias kp="kube-prompt"
 alias kres='kubectl get nodes --no-headers | awk '\''{print $1}'\'' | xargs -I {} sh -c '\''echo {} ; kubectl describe node {} | grep Allocated -A 5 | grep -ve Event -ve Allocated -ve percent -ve -- ; echo '\'''
 
+kcp() {
+    if [ $# != 4 ]; then
+        1>&2 echo "Please provide all required arguments: <resource_type> <name> <source_namespace> <destination_namespace>"
+        return 1
+    fi
+    kubectl get $1 $2 --namespace=$3 -o yaml | sed "s/namespace: $3/namespace: $4/" | kubectl create -f -
+}
+
 kdash() {
     kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep admin-user | awk '{print $1}')
     echo "Dashboard: http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/"
     kubectl proxy
+}
+
+kdelns() {
+    NAMESPACE=$1
+    if [ -z "$NAMESPACE" ]; then
+        1>&2 echo "Please provide the namespace"
+        return 1
+    fi
+    kubectl proxy &
+    kubectl get namespace $NAMESPACE -o json |jq '.spec = {"finalizers":[]}' >temp.json
+    curl -k -H "Content-Type: application/json" -X PUT --data-binary @temp.json 127.0.0.1:8001/api/v1/namespaces/$NAMESPACE/finalize
 }
