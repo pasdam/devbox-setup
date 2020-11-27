@@ -78,4 +78,11 @@
         "editor.wordBasedSuggestions": false
     },
     "window.zoomLevel": -1,
+    "vs-kubernetes": {
+        "vs-kubernetes.kubectl-path.mac": "/Users/paco/.vs-kubernetes/tools/kubectl/kubectl",
+        "vs-kubernetes.minikube-path.mac": "/Users/paco/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+        "vs-kubernetes.helm-path.mac": "/Users/paco/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+        "vs-kubernetes.draft-path.mac": "/Users/paco/.vs-kubernetes/tools/draft/darwin-amd64/draft"
+    },
+    "dart.lineLength": 800,
 }
