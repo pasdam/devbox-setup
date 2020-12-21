@@ -1,0 +1,7 @@
+kss() {
+    if [ 2 != $# ]; then
+        1>&2 echo "Please provide all the required arguments: <namespace> <secret>"
+        return 1
+    fi
+    kubectl get secret -n $1 -o json $2 | kubeseal -o yaml
+}
