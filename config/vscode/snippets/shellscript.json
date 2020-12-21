@@ -56,7 +56,7 @@
 		"prefix": "ifStringNotEmpty",
 		"body": [
 			"if [ -n \"${1:string}\" ]; then",
-			"\t# string is empty",
+			"\t# string is not empty",
 			"fi"
 		],
 		"description": "Check weather a string contains a substring"
