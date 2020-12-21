@@ -45,6 +45,7 @@ cask 'flycut'
 cask 'genymotion'
 cask 'gimp'
 cask 'google-chrome'
+cask 'gpg-suite'
 cask 'handbrake'
 cask 'intellij-idea-ce'
 cask 'iterm2'
@@ -61,10 +62,11 @@ cask 'vscodium'
 cask 'wireshark'
 cask 'xnconvert'
 cask 'xquartz'
-cask 'zoomus'
+cask 'zoom'
 
 tap 'dart-lang/dart'
 brew 'dart'
 
 mas 'amphetamine', id: 937984704
+mas 'microsoft remote desktop', id: 1295203466
 mas 'xcode', id: 497799835
