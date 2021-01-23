@@ -79,17 +79,36 @@
 		],
 		"description": "Check weather 2 strings are different"
 	},
+	"Print usage": {
+		"prefix": "printUsage",
+		"body": [
+			"print_usage() {",
+				"\tSCRIPT_NAME=$(basename \"\\$0\")",
+				"\techo \"Usage: \"\\$SCRIPT_NAME\"\"",
+				"\techo \"Example: \"\\$SCRIPT_NAME\"\"",
+				"\texit \\$1",
+			"}"
+		],
+		"description": "Create the skeleton of the 'print_usage' function"
+	},
 	"Script's folder": {
 		"prefix": "scriptFolder",
 		"body": [
-			"WORKING_DIR=\"$(cd \"$( dirname \"${BASH_SOURCE[0]}\" )\" >/dev/null && pwd )\""
+			"WORKING_DIR=\"$(cd \"$( dirname \"\\$0\" )\" >/dev/null && pwd )\""
 		],
 		"description": "Get current script's folder"
+	},
+	"Script's name": {
+		"prefix": "scriptName",
+		"body": [
+			"SCRIPT_NAME=$(basename \"\\$0\")"
+		],
+		"description": "Get current script's name"
 	},
 	"Shebang": {
 		"prefix": "shebang",
 		"body": [
-			"#!/usr/bin/env bash"
+			"#!/bin/sh"
 		],
 		"description": "Shebang valid on all systems"
 	},
