@@ -33,6 +33,7 @@ brew 'node'
 brew 'ntfs-3g'
 brew 'prototool'
 brew 'telnet'
+brew 'terraform-docs'
 brew 'terraform'
 brew 'tree'
 brew 'wget'
@@ -70,3 +71,4 @@ brew 'dart'
 mas 'amphetamine', id: 937984704
 mas 'microsoft remote desktop', id: 1295203466
 mas 'xcode', id: 497799835
+mas 'World Clock Widgets', id: 956377119
