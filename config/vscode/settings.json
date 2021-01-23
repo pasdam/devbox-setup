@@ -85,4 +85,6 @@
         "vs-kubernetes.draft-path.mac": "/Users/paco/.vs-kubernetes/tools/draft/darwin-amd64/draft"
     },
     "dart.lineLength": 800,
+    "python.showStartPage": false,
+    "jupyter.insidersChannel": "off",
 }
