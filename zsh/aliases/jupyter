@@ -1,2 +1,31 @@
-alias jupyter_start='docker run --rm -d -p 8888:8888 -v `pwd`:/home/jovyan/work --name jupyter jupyter/datascience-notebook:b90cce83f37b && docker logs -f jupyter'
 alias jupyter_stop='docker stop jupyter'
+
+jupyter_start() {
+    NAME=jupyter
+
+    CONTAINER=$(docker ps -q -a -f name=$NAME)
+    if [ -n "${CONTAINER}" ]; then
+        echo "Starting stopped container: "$CONTAINER
+        docker start $CONTAINER
+
+    else
+        WORKSPACE=$1
+        if [ -z "$WORKSPACE" ]; then
+            WORKSPACE=`pwd`
+        fi
+
+        echo "Starting new container"
+
+        docker run -d -p 8888:8888 -v $WORKSPACE:/home/jovyan/work --name $NAME jupyter/tensorflow-notebook:latest start-notebook.sh --NotebookApp.token=$JUPYTER_TOKEN > /dev/null
+
+        # This is a lazy workaround to add missing packages
+        # TODO: create custom image with missing packages
+        docker exec $NAME pip install --upgrade mplfinance
+        docker exec $NAME pip install --upgrade "camelot-py[cv]"
+    fi
+
+    sleep 2
+
+    URL=$(docker logs $NAME 2> >(grep http://127.0.0.1) | tail -1 | sed -e 's/     or //')
+    echo $URL
+}
