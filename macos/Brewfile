@@ -10,7 +10,6 @@ brew 'glooctl'
 cask 'osxfuse'
 brew 'datawire/blackbird/telepresence'
 
-brew 'argocd'
 brew 'aws-iam-authenticator'
 brew 'awscli'
 brew 'bash'
