@@ -64,7 +64,7 @@
 	"If strings equal": {
 		"prefix": "ifStringsEqual",
 		"body": [
-			"if [ ${1:str1} == \"${2:str2}\" ]; then",
+			"if [ ${1:str1} = \"${2:str2}\" ]; then",
 			"\t# strings are equal",
 			"fi"
 		],
@@ -94,7 +94,7 @@
 	"Script's folder": {
 		"prefix": "scriptFolder",
 		"body": [
-			"WORKING_DIR=\"$(cd \"$( dirname \"\\$0\" )\" >/dev/null && pwd )\""
+			"SCRIPT_DIR=\"$(cd \"$( dirname \"\\$0\" )\" >/dev/null && pwd )\""
 		],
 		"description": "Get current script's folder"
 	},
