@@ -34,3 +34,6 @@ done
 if [ -f "$SETUP_PROJECT_PATH/zsh/aliases/.local" ]; then
     source $SETUP_PROJECT_PATH/zsh/aliases/.local
 fi
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
