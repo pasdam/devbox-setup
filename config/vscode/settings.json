@@ -17,11 +17,9 @@
     "files.exclude": {
         "**/.git": false
     },
-    "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
     "go.formatTool": "gofmt",
-    "go.useLanguageServer": true,
     "plantuml.render": "Local",
     "workbench.startupEditor": "newUntitledFile",
     "todo-tree.tree.showScanModeButton": false,
@@ -33,7 +31,8 @@
         "-s"
     ],
     "files.associations": {
-        "*.env": "properties"
+        "*.env": "properties",
+        "*.hcl": "packer"
     },
     "cSpell.userWords": [
         "Kubenetes",
@@ -87,4 +86,19 @@
     "dart.lineLength": 800,
     "python.showStartPage": false,
     "jupyter.insidersChannel": "off",
+    "editor.tabSize": 2,
+    "dart.debugExternalLibraries": false,
+    "dart.debugSdkLibraries": false,
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "XXX",
+        "[ ]",
+        "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "docker.showStartPage": false,
+    "files.insertFinalNewline": true,
 }
