@@ -23,7 +23,7 @@ if [ -f "$SETUP_PROJECT_PATH/zsh/.env.local" ]; then
     source $SETUP_PROJECT_PATH/zsh/.env.local
 fi
 
-# # Load oh-my-zsh
+# Load oh-my-zsh
 source $SETUP_PROJECT_PATH/zsh/oh-my-zsh/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
