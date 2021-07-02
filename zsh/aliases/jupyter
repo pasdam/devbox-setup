@@ -16,7 +16,7 @@ jupyter_start() {
 
         echo "Starting new container"
 
-        docker run -d -p 8888:8888 -v $WORKSPACE:/home/jovyan/work --name $NAME jupyter/tensorflow-notebook:latest start-notebook.sh --NotebookApp.token=$JUPYTER_TOKEN > /dev/null
+        docker run -d -p 8888:8888 -v $WORKSPACE:/home/jovyan/work --name $NAME jupyter/tensorflow-notebook:notebook-6.4.0 start-notebook.sh --NotebookApp.token=$JUPYTER_TOKEN > /dev/null
 
         # This is a lazy workaround to add missing packages
         # TODO: create custom image with missing packages

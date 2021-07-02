@@ -4,20 +4,20 @@ cask 'adoptopenjdk11'
 tap 'c-bata/kube-prompt'
 brew 'kube-prompt'
 
-tap 'solo-io/tap'
-brew 'glooctl'
+tap 'datawire/blackbird'
+brew 'telepresence'
 
-cask 'osxfuse'
-brew 'datawire/blackbird/telepresence'
+tap 'dart-lang/dart'
+brew 'dart'
+
+tap 'fluxcd/tap'
+brew 'flux'
 
 tap 'hashicorp/tap'
 brew 'hashicorp/tap/packer'
 
-tap 'deviceinsight/packages'
-brew 'deviceinsight/packages/kafkactl'
-
-tap 'fluxcd/tap'
-brew 'flux'
+tap 'solo-io/tap'
+brew 'glooctl'
 
 brew 'aws-iam-authenticator'
 brew 'awscli'
@@ -61,7 +61,7 @@ cask 'gpg-suite'
 cask 'handbrake'
 cask 'intellij-idea-ce'
 cask 'iterm2'
-cask 'mockoon'
+cask 'osxfuse'
 cask 'postman'
 cask 'qbittorrent'
 cask 'sourcetree'
@@ -71,15 +71,9 @@ cask 'virtualbox-extension-pack'
 cask 'virtualbox'
 cask 'vlc'
 cask 'vscodium'
-cask 'wireshark'
-cask 'xnconvert'
-cask 'xquartz'
 cask 'zoom'
-
-tap 'dart-lang/dart'
-brew 'dart'
 
 mas 'amphetamine', id: 937984704
 mas 'microsoft remote desktop', id: 1295203466
-mas 'xcode', id: 497799835
+# mas 'xcode', id: 497799835
 mas 'World Clock Widgets', id: 956377119
