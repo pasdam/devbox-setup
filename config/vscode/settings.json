@@ -76,7 +76,6 @@
         "editor.tabCompletion": "onlySnippets",
         "editor.wordBasedSuggestions": false
     },
-    "window.zoomLevel": -1,
     "vs-kubernetes": {
         "vs-kubernetes.kubectl-path.mac": "/Users/paco/.vs-kubernetes/tools/kubectl/kubectl",
         "vs-kubernetes.minikube-path.mac": "/Users/paco/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
@@ -102,4 +101,6 @@
     "docker.showStartPage": false,
     "files.insertFinalNewline": true,
     "vscode-kubernetes.minikube-path.mac": "/usr/local/bin/minikube",
+    "window.zoomLevel": -1,
+    "redhat.telemetry.enabled": false,
 }
