@@ -10,4 +10,5 @@ plugins=(
   sudo
   systemd
   zsh-autosuggestions
+  zsh-syntax-highlighting
 )

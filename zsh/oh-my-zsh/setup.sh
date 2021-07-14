@@ -9,6 +9,7 @@ if [ ! -d "$HOME/.oh-my-zsh" ]; then
 fi
 
 git clone --depth 1 https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone --depth 1 https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 # install dotfiles
 ln -sf $SCRIPT_DIR/themes/robbyrussell_mod.zsh-theme $HOME/.oh-my-zsh/themes/robbyrussell_mod.zsh-theme
