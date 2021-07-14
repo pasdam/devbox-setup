@@ -6,9 +6,7 @@ installApps() {
     xcode-select --install
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew bundle
-
-    brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/c3a105c41a8f8be942bf97554466af236c2fac72/Formula/kubernetes-helm.rb
-    brew pin kubernetes-helm
+    sudo brew services start stubby
 }
 
 showHiddenFiles() {
