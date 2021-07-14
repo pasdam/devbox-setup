@@ -1,0 +1,10 @@
+add_newline = false
+
+[docker_context]
+disabled = true
+
+[golang]
+symbol = " "
+
+[kubernetes]
+disabled = false
